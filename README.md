@@ -19,6 +19,3 @@ To run all tests against against Saucelabs use `npm run test:sauce`
 Reload the latest test report using `npm run report`
 
 You should have 1 example pass and 1 example fail.
-
-### As part of coding excercise, try and fix the failing example
-
