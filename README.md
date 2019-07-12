@@ -1,6 +1,6 @@
 ### Prerequisite
 
-Saucelabs account or local Chrome install.
+Saucelabs account or Chrome installed locally on your machine.
 
 NOTE: This is designed and tested on Mac.  It probably isn't Windows friendly.
 
