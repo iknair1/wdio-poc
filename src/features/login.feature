@@ -6,5 +6,6 @@ And I provide <username> and <password>
 And I click on the submit button
 Then I see <page>
 Examples:
-|username|password|login component|
-
+| username     | password     | page      |
+| testuser1    | password1    | homepage  |
+|incorrect_user|incorrect_pwd | errorpage |
