@@ -1,0 +1,43 @@
+{
+  "name": "webdriverio-theinternet",
+  "version": "1.0.0",
+  "description": "Example webdriverio usage",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "allure-commandline": "1.4.23",
+    "babel-register": "^6.26.0",
+    "chai": "^3.5.0",
+    "selenium-standalone": "5.11.1",
+    "wdio": "^2.0.2",
+    "wdio-allure-reporter": "0.1.2",
+    "wdio-cucumber-framework": "^2.2.0",
+    "wdio-mocha-framework": "0.5.8",
+    "wdio-sauce-service": "0.2.4",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "webdriverio": "^4.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cleanup": "rm -rf ./allure-results && rm -rf ./allure-report && rm -rf ./errorShots",
+    "pretest": "npm run cleanup",
+    "test": "./node_modules/.bin/wdio",
+    "test:local": "npm run pretest && ./node_modules/.bin/wdio ./conf/local.conf.js && npm run posttest",
+    "test:sauce": "npm run pretest && ./node_modules/.bin/wdio ./conf/saucelabs.conf.js && npm run posttest",
+    "report": "allure generate allure-results && allure report open",
+    "posttest": "npm run report",
+    "postinstall": "./node_modules/.bin/selenium-standalone install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-fowler/webdriverio-theinternet.git"
+  },
+  "author": "Andrew Fowler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-fowler/webdriverio-theinternet/issues"
+  },
+  "homepage": "https://github.com/andrew-fowler/webdriverio-theinternet#readme"
+}
