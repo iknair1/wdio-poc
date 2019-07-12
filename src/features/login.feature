@@ -4,8 +4,8 @@ Scenario Outline: login
 Given I load the ER hub
 And I provide <username> and <password>
 And I click on the submit button
-Then I see <page>
+Then I see the homepage
 Examples:
-| username     | password     | page      |
-| testuser1    | password1    | homepage  |
-|incorrect_user|incorrect_pwd | errorpage |
+| username     | password     |
+| testuser1    | password1    |
+|incorrect_user|incorrect_pwd |
