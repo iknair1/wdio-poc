@@ -1,8 +1,8 @@
-# Requirements
+# Prerequisite
 
 Saucelabs account or local Chrome install.
 
-NOTE: This is designed for / tested on Mac.  It probably isn't Windows friendly.
+NOTE: This is designed and tested on Mac.  It probably isn't Windows friendly.
 
 # Setup
 
